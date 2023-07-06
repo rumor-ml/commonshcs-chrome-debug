@@ -1,0 +1,12 @@
+<div class="popup">
+  <mat-checkbox>Mock Data</mat-checkbox>
+  <mat-selection-list [multiple]="false">
+    <mat-list-option
+      *ngFor="let f of (chcsdebug|async)?.fixtures"
+      [value]="f"
+      (click)="loadFixture(f)"
+    >
+      {{f.id}}
+    </mat-list-option>
+  </mat-selection-list>
+</div>

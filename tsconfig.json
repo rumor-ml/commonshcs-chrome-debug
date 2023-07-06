@@ -19,10 +19,18 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "paths": {
+      "@angular/*": [
+        "../commonshcs-angular/node_modules/@angular/*",
+      ],
+      "@commonshcs-angular": [
+        "../commonshcs-angular/projects/commonshcs-angular/src/public-api.ts"
+      ],
+    },
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
